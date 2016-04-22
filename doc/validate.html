@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            input.error { border: 1px solid red; }
+            label.error {
+              background:url("../images/nochecked.png") no-repeat 0px 0px;
+              padding-left: 14px;
+              padding-bottom: 2px;
+              font-weight: bold;
+              color: #EA5200;
+            }
+            label.checked {
+              background:url("../images/checked.png") no-repeat 0px 0px;
+            }
+            label.valid {
+                background: url("../images/checked.png") no-repeat 0px 0px;
+                padding-left: 14px;
+            }
+        </style>
+        <script language="javascript" src="jquery1.9.2.js"></script>  
+    <script language="javascript" src="jquery.watermark.min.js"></script>  
+    <script language="javascript" src="jquery.validate1.11.1.js"></script>  
+    <script>
+            $(function () {  
+            $("#d5-username").watermark("请你需入用户名");  
+            $("#d5-password").watermark("请你需入需入你的密码");  
+            
+            $("#gideon").validate({success: "valid"} );
+    });  
+    </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        
+      <form id="gideon" action="" method="POST" class="cmxform">  
+        <h3>Watermark Demonstration </h3>  
+        <fieldset>  
+            <ol>  
+                <li><label for="d5-username">用户名 <em>*</em></label> <input id="d5-username" class="required" name="d5-username" /></li>  
+                <li><label for="d5-password">密码 <em>*</em></label> <input id="d5-password" class="required" name="d5-password" type="password" maxlength="10" /></li>  
+                <li><label></label> <input type="submit" value="提交" /></li>  
+            </ol>  
+        </fieldset>  
+     </form>  
+        
+    </body>
+</html>
