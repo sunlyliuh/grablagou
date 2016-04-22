@@ -26,10 +26,10 @@ return array(
     'TMPL_LAYOUT_ITEM'      => '{__CONTENT__}',
     /* url设置 */
     'URL_CASE_INSENSITIVE'  => true, // 不区分大小写
-    'URL_MODEL'             => '2',
-    'URL_PATHINFO_DEPR'     => '-',
+//    'URL_MODEL'             => '2',
+//    'URL_PATHINFO_DEPR'     => '/',
     //启用路由功能
-    'URL_ROUTER_ON'=>true,
+//    'URL_ROUTER_ON'=>on,
     //路由定义
     'URL_ROUTE_RULES'=> array(
 //        'blog/:year\d/:month\d'=>'Blog/archive', //规则路由
