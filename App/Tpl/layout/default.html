@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>{$title}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="{$description}" />
+    <meta name="keywords" content="{$keywords}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css" title="style" />
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+</head>
+    <body>
+    <div id="main">
+      <div id="header">
+        <div id="logo">
+          <div id="logo_text">
+            <!-- class="logo_colour", allows you to change the colour of the text -->
+            <h1><a href="<php>echo U('article/index');</php>">php<span class="logo_colour">&amp;mysql</span></a></h1>
+            <h2>欢迎来到我的小屋！</h2>
+          </div>
+        </div>
+        <div id="menubar">
+          <ul id="menu">
+            <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+            <li <eq name="url" value="Article/index">class="selected"</eq> ><a href="<php>echo U('article/index');</php>">首页</a></li>
+<!--            <li><a href="examples.html">文章类别</a></li>
+            <li><a href="page.html">图片</a></li>
+            <li><a href="another_page.html">Another Page</a></li>-->
+            <li <eq name="url" value="Article/aboutme">class="selected"</eq>><a href="<php>echo U('article/aboutme');</php>">关于我</a></li>
+            <eq name="userId" value="1">
+                <li <eq name="url" value="Admin/index">class="selected"</eq>><a href="<php>echo U('admin/index');</php>">后台管理</a></li>
+                <li><a href="<php>echo U('login/logout');</php>">退出</a></li>
+            <else />
+                <li <eq name="url" value="Login/index">class="selected"</eq>><a href="<php>echo U('login/index');</php>">登陆</a></li>
+            </eq>
+          </ul>
+        </div>
+      </div>
+        
+      {__CONTENT__}
+        
+      <div id="content_footer"></div>
+      <div id="footer">
+        CopyRight 2010-2013 | <a href="http://www.thinkphp.cn/">thinkphp</a>
+      </div>
+    </div>
+  </body>
+</html>

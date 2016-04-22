@@ -1,0 +1,37 @@
+
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="{:U('admin/index')}">后台管理</a>>>飞信好友列表</h1>
+           <table width="100%">
+               <tr>
+                   <td>ID</td>
+                   <td>姓名</td>
+                   <td>手机号</td>
+                   <td>email</td>
+                   <td>城市</td>
+                   <td>发送内容</td>
+                   <td>添加时间</td>
+                   <td>操作</td>
+               </tr>
+               <volist name="fetionList" id="vo">
+               <tr>
+                   <td>{$vo.id}</td>
+                   <td>{$vo.name}</td>
+                   <td>{$vo.mobile}</td>
+                   <td>{$vo.email}</td>
+                   <td>{$vo.cityname}</td>
+                   <td><eq name="vo.send_weather" value="1">天气</eq> &nbsp; <eq name="vo.send_news" value="1">新闻</eq> <eq name="vo.send_jizhuanwan" value="1">脑筋急转弯</eq></td>
+                   <td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
+                   <td><a href="{:U('fetion/edit',array('id'=>$vo['id']))}">编辑</a></td>
+               </tr>
+               </volist>
+           </table>
+       {$page}
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,36 @@
+
+<div id="site_content">
+
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="<php>echo U('admin/index');</php>">后台管理</a>>>好友添加</h1>
+       <form name="fetioneditform" id="fetioneditform" method="POST" action="<php>echo U('fetion/edit');</php>" >
+           <input type="hidden" name="id" value="{$userInfo.id}" />
+        <div class="div_lable">
+            <lable>姓名：</label><input type="text" name="name" value="{$userInfo.name}" />
+        </div>
+        <div class="div_lable">
+            <lable>手机号码：</label><input type="text" name="mobile" value="{$userInfo.mobile}" />
+        </div>
+        <div class="div_lable">
+            <lable>Email：</label><input type="text" name="email" value="{$userInfo.email}" />
+        </div>
+        <div class="div_lable">
+            <lable>城市：</label><input type="text" name="cityname" value="{$userInfo.cityname}" />
+        </div>
+        <div class="div_lable">
+            <label>发送信息</label>
+            <input type="checkbox" name="send_weather" value="1" <eq name="userInfo.send_weather" value="1">checked="checked"</eq> />天气预报 &nbsp;
+            <input type="checkbox" name="send_news" value="1" <eq name="userInfo.send_news" value="1">checked="checked"</eq> />新闻
+            <input type="checkbox" name="send_jizhuanwan" value="1" <eq name="userInfo.send_jizhuanwan" value="1">checked="checked"</eq> />脑筋急转弯
+        </div>
+        <div class="div_lable">
+            <input type="submit" name="btn_edit" value="添 加" />
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+

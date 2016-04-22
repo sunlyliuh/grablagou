@@ -1,0 +1,31 @@
+
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="{:U('admin/index')}">后台管理</a>>>文章列表</h1>
+           <table width="100%">
+               <tr>
+                   <td>ID</td>
+                   <td>文章标题</td>
+                   <td>添加时间</td>
+                   <td>点击次数</td>
+                   <td>操作</td>
+               </tr>
+               <volist name="articleList" id="vo">
+               <tr>
+                   <td>{$vo.id}</td>
+                   <td><a href="{:U('article/detail',array('id'=>$vo['article_id']))}" target="_blank">{$vo.title}</a></td>
+                   <td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
+                   <td>{$vo.click}</td>
+                   <td><a href="{:U('admin/editarticle',array('id'=>$vo['id']))}">编辑</a></td>
+               </tr>
+               </volist>
+           </table>
+       {$page}
+    </div>
+  </div>
+</div>
+

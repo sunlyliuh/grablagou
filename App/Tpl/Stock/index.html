@@ -1,0 +1,22 @@
+
+<div id="site_content">
+
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="<php>echo U('admin/index');</php>">后台管理</a>>>列表展示</h1>
+           <table width="80%">
+               <tr>
+                   <td>股票名称</td>
+                   <td>股票代码</td>
+               </tr>
+               <volist name="stockInfo" id="vo">
+               <tr>
+                   <td>{$vo.name}</td>
+                   <td>{$vo.code}</td>
+               </tr>
+               </volist>
+           </table>
+    </div>
+  </div>
+</div>

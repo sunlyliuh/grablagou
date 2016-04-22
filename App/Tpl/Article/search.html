@@ -1,0 +1,23 @@
+
+<div id="site_content">
+  <div class="sidebar">
+    <include file="Public:sitebar" />
+  </div>
+  <div id="content">
+    <if condition="($articleList)">
+    <volist name="articleList" id="vo">
+    <div class="article_content">
+      <h1>{$vo.title}</h1>
+      <p>{$vo.content}</p>
+      <p style="float: right"><a href="{$vo.url}" target="_blank">阅读全文</a> {$vo.add_time|date='Y-m-d H:i',###}</p>
+    </div>
+    </volist>
+      <div style="clear:both;"> </div>
+    <div>{$page}</div>
+    <else />
+    <div class="article_content">
+        <p>该分类下暂无文章!</p>
+    </div>
+    </if>
+  </div>
+</div>

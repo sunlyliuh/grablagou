@@ -1,0 +1,29 @@
+
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="{:U('admin/index')}">后台管理</a>>>访客列表</h1>
+           <table width="100%">
+               <tr>
+                   <td>ID</td>
+                   <td>ip</td>
+                   <td>访问url</td>
+                   <td>添加时间</td> 
+               </tr>
+               <volist name="visitList" id="vo">
+               <tr>
+                   <td>{$vo.id}</td>
+                   <td>{$vo.ip}</td>
+                   <td>{$vo.visiturl}</td>
+                   <td>{$vo.created}</td>
+               </tr>
+               </volist>
+           </table>
+       {$page}
+    </div>
+  </div>
+</div>
+

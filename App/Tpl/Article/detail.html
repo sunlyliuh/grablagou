@@ -1,0 +1,78 @@
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.js" type="text/javascript"></script>   
+<script src="http://ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.validate.unobtrusive.js" type="text/javascript"></script> 
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/kindeditor-4.1.7/plugins/code/prettify.css" />
+<script type="text/javascript" src="__PUBLIC__/js/kindeditor-4.1.7/plugins/code/prettify.js"></script>
+<script>
+$(function(){ prettyPrint(); });
+</script>
+      <div id="site_content">
+        <div class="sidebar">
+          <include file="Public:sitebar" />
+        </div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <div class="article_content">
+            <h1>{$articleInfo.title}</h1>
+            <div>
+            <div>{$articleInfo.content}</div>
+            </div>
+            <p style="float: right">时间：{$articleInfo.add_time|date='Y-m-d H:i',###}&nbsp;&nbsp; 浏览次数：{$articleInfo.click}</p>
+          </div>
+          <br />
+          <!-- comment list -->
+          <div class="article_comment_list">
+              <volist name="commentInfo" id="vo">
+              <div class="comment_body">
+                  <div class="comment_time">
+                      {$vo.email} 回答于 {$vo.add_time|date='Y-m-d H:i',###}
+                  </div>
+                  <div class="comment_detail">
+                      {$vo.comment}
+                  </div>
+              </div>
+              </volist>
+          </div>
+          <div class="article_comment" >
+              <form id="addcomment" method="post" action="<php>echo U('article/ajaxcomment');</php>">
+                  <input type="hidden" name="article_id" value="{$articleInfo.id}" />
+              <table width="100%" border="0">
+                  <tr>
+                      <td width="15%">邮箱</td>
+                      <td width="85%"><input type="text" class="input_text" name="email" size="25" id="email" data-val="true" data-val-required="邮箱必填" data-val-email="邮箱格式错误" /> <span data-valmsg-for="email"></span></td>
+                  </tr>
+                  <tr>
+                      <td>个人网址</td>
+                      <td><input type="text" class="input_text" name="personal_site" id="personal_site" size="30" data-val="true" data-val-url="必须为有效网址" /><span data-valmsg-for="personal_site"></span></td>
+                  </tr>
+                  <tr>
+                      <td>内容</td>
+                      <td><textarea name="comment" style="font-size:14px;" rows="5" id="comment" data-val="true" data-val-length="至少5个字符" data-val-length-min="5" data-val-length-max="200" data-val-required="内容必填" cols="50"></textarea> <span data-valmsg-for="comment"></span></td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;</td>
+                      <td><input type="submit" name="btn_comment" id="send_comment" value="回 复" />
+                      <input type="hidden" name="token" id="token" value="{$token}" />
+                      </td>
+                  </tr>
+              </table>
+              </form>
+          </div>
+        </div>
+      </div>
+<script>
+$(document).ready(function(){
+    $("#send_comment").click(function(){
+        // 验证是否通过
+        var r = $("#addcomment").valid();; 
+        if( r ) {
+            $.post($("#addcomment").attr('action'), $("#addcomment").serialize(), function(data){
+                $(".article_comment_list").append(data.msg);
+                $("#email").val('');
+                $("#personal_site").val('');
+                $("#comment").val('');
+            }, 'json'); 
+        }
+        return false;
+    });
+})
+</script>

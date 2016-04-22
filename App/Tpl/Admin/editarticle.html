@@ -1,0 +1,56 @@
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/kindeditor-4.1.7/themes/default/default.css" title="style" />
+<script type="text/javascript" src="__PUBLIC__/js/kindeditor-4.1.7/kindeditor-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/kindeditor-4.1.7/lang/zh_CN.js"></script>
+<script>
+    var url = "<php>echo U('file/upload');</php>";
+ $(document).ready(function(){
+                
+       var editor = KindEditor.create('textarea[name="content"]', {
+                cssPath : "__PUBLIC__/js/kindeditor-4.1.7/plugins/code/prettify.js",
+                uploadJson : url,
+                // fileManagerJson : '../php/file_manager_json.php',
+                allowFileManager : false
+        });
+
+})
+</script>
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="<php>echo U('admin/index');</php>">后台管理</a>>>编辑文章</h1>
+        <form name="articleedit" id="articleedit" method="POST" action="<php>echo U('admin/editarticle');</php>" >
+            <input type="hidden" name="id" value="{$articleInfo.id}" />
+        <div class="div_lable">
+            <label>分类名称：</label><select name="cat_id">
+                  <volist name="catInfo" id="vo">
+                      <option value="{$vo.id}" <eq name="vo.id" value="$articleInfo.cat_id"> selected="selected" </eq>>{$vo.name}</option>
+                  </volist>
+            </select>
+        </div>
+        <div class="div_lable">
+            <label>文章标题：</label><input type="text" name="title" value="{$articleInfo.title}" size="50" />
+        </div>
+        <div class="div_lable">
+            <label>文章内容：</label><textarea name ="content" id="content" style="width:700px;height:400px;visibility:hidden;">{$articleInfo.content}</textarea>
+        </div>
+        <div class="div_label">
+            <label>文章状态</label><select name="status">
+                <option value="正常" <eq name="articleInfo.status" value="正常">selected="selected" </eq> >正常</option>
+                <option value="删除" <eq name="articleInfo.status" value="删除">selected="selected" </eq>>删除</option>
+            </select>
+         </div>
+         <div class="div_lable">
+            <lable>文章标签：</label><input name ="tag" id="tag" value="{$articleInfo.tag}" size="30" />用空格或,号进行分割
+        </div>
+        <div class="div_lable">
+            <input type="submit" name="btn_edit" value="编 辑" />
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+

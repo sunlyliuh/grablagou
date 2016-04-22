@@ -1,0 +1,22 @@
+
+<div id="site_content">
+
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="<php>echo U('admin/index');</php>">后台管理</a>>>股票添加</h1>
+       <form name="cataddform" id="cataddform" method="POST" action="<php>echo U('stock/add');</php>" >
+        <div class="div_lable">
+            <lable>名称：</label><input type="text" name="name" value="" />
+        </div>
+        <div class="div_lable">
+            <lable>代码：</label><input type="text" name="code" value="" />
+        </div>
+        <div class="div_lable">
+            <input type="submit" name="btn_tj" value="添 加" />
+        </div>
+        </form>
+    </div>
+  </div>
+</div>
+

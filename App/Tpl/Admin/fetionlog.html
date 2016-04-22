@@ -1,0 +1,33 @@
+
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="{:U('admin/index')}">后台管理</a>>>发送日志</h1>
+           <table width="100%">
+               <tr>
+                   <td>ID</td>
+                   
+                   <td>手机号</td>
+                   <td>消息</td>
+                   <td>返回信息</td>
+                   <td>添加时间</td> 
+               </tr>
+               <volist name="logList" id="vo">
+               <tr>
+                   <td>{$vo.id}</td>
+                  
+                   <td>{$vo.mobile}</td>
+                   <td>{$vo.msg}</td>
+                   <td>{$vo.return_val}</td>
+                   <td>{$vo.add_time|date='Y-m-d H:i:s',###}</td>
+               </tr>
+               </volist>
+           </table>
+       {$page}
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,44 @@
+<h3>文章分类</h3>
+<ul>
+    <volist name="catInfo" id="vo">
+        <li><a href="{$vo.url}">{$vo.name}</a></li>
+    </volist>
+</ul>
+<h3>我的好友</h3>
+<ul>
+  <li><a href="http://blog.sina.com.cn/sunlyliuh" target="_blank">流星飞雨</a></li>
+  <li><a href="http://blog.sina.com.cn/u/1636126384" target="_blank">安建龙</a></li>
+  <li><a href="http://blog.sina.com.cn/u/1681307884" target="_blank">肖岩岩</a></li>
+  <li><a href="http://sfcuboy.sinaapp.com/" target="_blank">小柏</a></li>
+</ul>
+
+<h3>Search</h3>
+<form method="get" action="<php>echo U('article/search');</php>" id="search_form">
+  <p>
+    <input class="search" type="text" id="key_words" name="key_words" value="" />
+    <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="__PUBLIC__/image/search.png" alt="Search" title="Search" />
+  </p>
+</form>
+<script>
+$(document).ready(function(){
+    $("#search_form").submit(function(){
+        var keyWords = $("#key_words").val();
+        if(keyWords == ''){
+            return false;
+        }
+    });
+    
+})
+</script>
+
+<if condition="($commentInfo)">
+<h3>最新留言</h3>
+<ul>
+    <volist name="commentInfo" id="vo">
+        <li><a href="{:U('article/detail',array('id'=>$vo['article_id']))}" target="_blank">{$vo.email} 回复 {$vo.comment} {$vo.add_time|date='Y-m-d H:i',###}</a> </li>
+    </volist>
+</ul>
+</if>
+<!-- 联盟广告 -->
+<div class="site_advert">
+</div>

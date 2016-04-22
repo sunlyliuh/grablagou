@@ -1,0 +1,48 @@
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/kindeditor-4.1.7/themes/default/default.css" title="style" />
+<script type="text/javascript" src="__PUBLIC__/js/kindeditor-4.1.7/kindeditor-min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/kindeditor-4.1.7/lang/zh_CN.js"></script>
+<script>
+    var url = "<php>echo U('file/upload');</php>";
+ $(document).ready(function(){
+                
+       var editor = KindEditor.create('textarea[name="content"]', {
+                cssPath : "__PUBLIC__/js/kindeditor-4.1.7/plugins/code/prettify.js",
+                uploadJson : url,
+                // fileManagerJson : '../php/file_manager_json.php',
+                allowFileManager : false
+        });
+
+})
+</script>
+<div id="site_content">
+  <div class="sidebar">
+  </div>
+  <div id="content">
+    <!-- insert the page content here -->
+    <div class="article_content">
+       <h1><a href="<php>echo U('admin/index');</php>">后台管理</a>>>添加文章</h1>
+       <form name="articleadd" id="articleadd" method="POST" action="<php>echo U('admin/addarticle');</php>" >
+        <div class="div_lable">
+            <lable>分类名称：</label><select name="cat_id">
+                  <volist name="catInfo" id="vo">
+                      <option value="{$vo.id}">{$vo.name}</option>
+                  </volist>
+            </select>
+        </div>
+        <div class="div_lable">
+            <lable>文章标题：</label><input type="text" name="title" value="" size="50" />
+        </div>
+        <div class="div_lable">
+            <lable>文章内容：</label><textarea name ="content" id="content" style="width:700px;height:400px;visibility:hidden;"></textarea>
+        </div>
+        <div class="div_lable">
+            <lable>文章标签：</label><input name ="tag" id="tag" />用空格或,号进行分割
+        </div>
+        <div class="div_lable">
+            <input type="submit" name="btn_tj" value="添 加" />
+        </div>
+        </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<style>
+   
+</style>
+      <div id="site_content">
+        <div class="sidebar">
+          <include file="Public:sitebar" />
+        </div>
+        <div id="content">
+            <div class="advise_head">
+<!--                <span><a href="http://click.linktech.cn/?m=yihaodian&a=A100184778&l=00495&l_cd1=0&l_cd2=0&u_id=liuhuiblog" target=_blank><img src="http://d6.yihaodianimg.com/N03/M04/CD/AF/CgQCs1JVIaSASr29AABFy9ZwIkI00300.jpg" width="310" height="60" border="0"></a><img src="http://track.linktech.cn/?m=yihaodian&a=A100184778&l=00495&l_cd1=0&l_cd2=0" width="1" height="1" border="0" style="display:none"></span>
+                <span><a href="http://click.linktech.cn/?m=cotton&a=A100184778&l=01146&l_cd1=0&l_cd2=0&u_id=liuhuiblog" target=_blank><img src="http://res.purcotton.com/cps/linktech/20140121/logo.jpg" width="120" height="60" border="0"></a><img src="http://track.linktech.cn/?m=cotton&a=A100184778&l=01146&l_cd1=0&l_cd2=0" width="1" height="1" border="0" style="display:none"></span>-->
+            </div>
+          <if condition="($articleList)">
+          <volist name="articleList" id="vo">
+          <div class="article_content">
+              <h1><a href="{$vo.url}" target="_blank">{$vo.title}</a></h1>
+            <p>{$vo.content}</p>
+            <p style="float: right"><a>浏览数</a>：{$vo.click} &nbsp;&nbsp;<a href="{$vo.url}" target="_blank">阅读全文</a> {$vo.add_time|date='Y-m-d H:i',###}</p>
+          </div>
+          </volist>
+            <div style="clear:both;"> </div>
+          <div>{$page}</div>
+          <else />
+          <div class="article_content">
+              <p>该分类下暂无文章!</p>
+          </div>
+          </if>
+        </div>
+      </div>
+
