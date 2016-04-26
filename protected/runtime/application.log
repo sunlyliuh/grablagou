@@ -1,0 +1,319 @@
+2016/04/25 15:07:28 [error] [php] scandir() has been disabled for security reasons (/home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:216)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(90): GiiModule->init()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php(206): GiiModule->__construct()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(282): createComponent()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(337): CWebApplication->getModule()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 15:08:03 [error] [php] scandir() has been disabled for security reasons (/home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:216)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(90): GiiModule->init()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php(206): GiiModule->__construct()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(282): createComponent()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(337): CWebApplication->getModule()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 15:08:18 [error] [php] scandir() has been disabled for security reasons (/home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:216)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(90): GiiModule->init()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php(206): GiiModule->__construct()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(282): createComponent()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(337): CWebApplication->getModule()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 15:08:38 [error] [php] scandir() has been disabled for security reasons (/home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:216)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(90): GiiModule->init()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php(206): GiiModule->__construct()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(282): createComponent()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(337): CWebApplication->getModule()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 15:08:52 [error] [php] scandir() has been disabled for security reasons (/home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:216)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(90): GiiModule->init()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php(206): GiiModule->__construct()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/base/CModule.php(282): createComponent()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(337): CWebApplication->getModule()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(276): CWebApplication->createController()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=gii
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 15:11:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:11:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 15:12:53 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/wwwroot/default/talk/bigdata/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=gii
+---
+2016/04/25 18:47:03 [error] [php] Undefined index:  (/home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php:164)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#7 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): JobController->run()
+#8 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=job/grab
+in /home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php (164)
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/25 18:47:34 [error] [php] Undefined index:  (/home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php:176)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#7 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): JobController->run()
+#8 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=job/grab
+in /home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php (176)
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/26 10:01:32 [error] [php] Array to string conversion (/home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php:181)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#7 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): JobController->run()
+#8 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=job/grab
+in /home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php (181)
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/26 10:13:41 [error] [php] Undefined variable: model (/home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php:158)
+Stack trace:
+#0 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(133): JobController->runAction()
+#1 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CInlineFilter.php(58): JobController->filterAccessControl()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/web/CController.php(265): JobController->runActionWithFilters()
+#7 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(282): JobController->run()
+#8 /home/wwwroot/default/talk/bigdata/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/wwwroot/default/talk/datastatistic/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=job/grab
+in /home/wwwroot/default/talk/datastatistic/protected/controllers/JobController.php (158)
+in /home/wwwroot/default/talk/datastatistic/index.php (13)
+2016/04/26 15:03:08 [error] [php] include(Job.php): failed to open stream: No such file or directory (/home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php(23): spl_autoload_call()
+#1 unknown(0): GrabCommand->actionTest()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#8 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 15:04:27 [error] [php] include(Job.php): failed to open stream: No such file or directory (/home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php(23): spl_autoload_call()
+#1 unknown(0): GrabCommand->actionTest()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#8 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 15:07:03 [error] [php] include(Job.php): failed to open stream: No such file or directory (/home/wwwroot/default/talk/bigdata/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php(24): spl_autoload_call()
+#1 unknown(0): GrabCommand->actionTest()
+#2 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#4 /home/wwwroot/default/talk/bigdata/yii/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/wwwroot/default/talk/bigdata/yii/framework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/wwwroot/default/talk/bigdata/yii/framework/yiic.php(33): CConsoleApplication->run()
+#7 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#8 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 15:34:11 [error] [php] include(Job.php): failed to open stream: No such file or directory (/home/wwwroot/default/talk/datastatistic/yiiframework/YiiBase.php:432)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php(24): spl_autoload_call()
+#1 unknown(0): GrabCommand->actionTest()
+#2 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#3 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#4 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#5 /home/wwwroot/default/talk/datastatistic/yiiframework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#6 /home/wwwroot/default/talk/datastatistic/yiiframework/yiic.php(33): CConsoleApplication->run()
+#7 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#8 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 15:44:40 [error] [php] Undefined offset: 1 (/home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php:39)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#1 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /home/wwwroot/default/talk/datastatistic/yiiframework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /home/wwwroot/default/talk/datastatistic/yiiframework/yiic.php(33): CConsoleApplication->run()
+#4 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#5 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 15:57:38 [error] [php] Array to string conversion (/home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php:30)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#1 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#2 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#3 /home/wwwroot/default/talk/datastatistic/yiiframework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#4 /home/wwwroot/default/talk/datastatistic/yiiframework/yiic.php(33): CConsoleApplication->run()
+#5 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#6 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 16:00:30 [error] [php] Undefined variable: salaryArr (/home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php:49)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#1 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /home/wwwroot/default/talk/datastatistic/yiiframework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /home/wwwroot/default/talk/datastatistic/yiiframework/yiic.php(33): CConsoleApplication->run()
+#4 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#5 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
+2016/04/26 16:03:01 [error] [php] Undefined offset: 0 (/home/wwwroot/default/talk/datastatistic/protected/commands/GrabCommand.php:50)
+Stack trace:
+#0 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleCommandRunner.php(71): GrabCommand->run()
+#1 /home/wwwroot/default/talk/datastatistic/yiiframework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#2 /home/wwwroot/default/talk/datastatistic/yiiframework/base/CApplication.php(185): CConsoleApplication->processRequest()
+#3 /home/wwwroot/default/talk/datastatistic/yiiframework/yiic.php(33): CConsoleApplication->run()
+#4 /home/wwwroot/default/talk/datastatistic/protected/yiic.php(7): require_once()
+#5 /home/wwwroot/default/talk/datastatistic/protected/yiic(4): require_once()
+
