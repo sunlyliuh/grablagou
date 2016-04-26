@@ -1,8 +1,13 @@
 <?php
-define('THINK_PATH','./ThinkPHP/');
-define('APP_NAME','App');
-define('APP_PATH','./App/');
-define('APP_DEBUG',true);
-//define('SAE_RUNTIME',true);
-define('ENGINE_NAME','sae');
-require THINK_PATH.'ThinkPHP.php';
+
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/yiiframework/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
+
+// remove the following lines when in production mode
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+// specify how many levels of call stack should be shown in each log message
+defined('YII_TRACE_LEVEL') or define('YII_TRACE_LEVEL',3);
+
+require_once($yii);
+Yii::createWebApplication($config)->run();
