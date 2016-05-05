@@ -32,7 +32,7 @@ class JobController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','grab'),
+				'actions'=>array('index','view','grab','Analysis','Cityanalysis','Citysalary'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -153,10 +153,10 @@ class JobController extends Controller
     public function actionGrab()
     {
         $jobmodel = new Job;
-        $jobType = 'php';
+        $jobType = 'C++';
         $city    = '北京';
         for($page=1; $page<=10000;$page++){
-        $res = $jobmodel->getJob($city, $jobType, $page=1);
+        $res = $jobmodel->getJob($city, $jobType, $page=1);print_r($res);exit;
         if($res){
             $jobArr = json_decode($res,true);
             if($jobArr['success'] == 1){
@@ -205,6 +205,71 @@ class JobController extends Controller
             echo '抓取返回失败';
         }
         }
+    }
+    
+    /**
+     * 职位分析页面展示
+     */
+    public function actionAnalysis()
+    {
+        
+        $this->render('analysis',array(
+//			'city'=>$dataProvider,
+		));
+    }
+    
+    /**
+     * 按城市分析各个职位的行情数据
+     */
+    public function actionCityanalysis()
+    {
+        $city = $_GET['city'];
+        $totalsql = "SELECT count(*) as cnt FROM `tbl_clean_job` where city='{$city}' GROUP BY job_type ORDER BY `job_type` asc";    
+        $jobTotal = Yii::app()->db->createCommand($totalsql)->queryAll();
+        $jobTypeTotal = array();
+        foreach($jobTotal as $val){
+            array_push($jobTypeTotal, $val['cnt']);
+        }
+        
+        $option_legend_data = array('发布需求统计');
+        $option_xAxis_data = array('php','java','c','c++','android','ios');
+        $line_option_series_data = array(
+            $jobTypeTotal,
+        );
+        $barOption = CleanJob::getEchartBarOption('同一个城市不同职位的需求统计', $option_legend_data, $option_xAxis_data, $line_option_series_data, $unit='个');
+        
+        $result = array(
+            'ret' => 'succ',
+            'option'=> $barOption,
+        );
+        echo json_encode($result);exit;
+    }
+    
+    /**
+     * 同一个城市不同职位的工资
+     */
+    public function actionCitysalary()
+    {
+        $city = $_GET['city'];
+        $totalsql = "SELECT avg(salary_min) as avg_salary FROM `tbl_clean_job` where city='{$city}' GROUP BY job_type ORDER BY `job_type` asc";    
+        $jobTotal = Yii::app()->db->createCommand($totalsql)->queryAll();
+        $jobTypeTotal = array();
+        foreach($jobTotal as $val){
+            array_push($jobTypeTotal, $val['avg_salary']);
+        }
+        
+        $option_legend_data = array('平均工资统计');
+        $option_xAxis_data = array('php','java','c','c++','android','ios');
+        $line_option_series_data = array(
+            $jobTypeTotal,
+        );
+        $barOption = CleanJob::getEchartBarOption('同一个城市不同职位的平均工资', $option_legend_data, $option_xAxis_data, $line_option_series_data, $unit='元');
+        
+        $result = array(
+            'ret' => 'succ',
+            'option'=> $barOption,
+        );
+        echo json_encode($result);exit;
     }
 
 	/**
