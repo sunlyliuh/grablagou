@@ -14,3 +14,23 @@ CREATE TABLE IF NOT EXISTS `tbl_job` (
   `createTime` datetime NOT NULL COMMENT '创建时间',
   `position_name` varchar(100) NOT NULL COMMENT '职位名称'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='职位信息表';
+
+
+--
+-- 表的结构 `tbl_clean_job`
+--
+
+CREATE TABLE IF NOT EXISTS `tbl_clean_job` (
+  `id` int(11) NOT NULL,
+  `position_id` int(11) NOT NULL COMMENT '目标id',
+  `job_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '职位类型:1-php2-java3-c4-c++5-android6-ios',
+  `city` tinyint(1) NOT NULL DEFAULT '0' COMMENT '所在城市1-北京2-上海3-广州4-深圳5-杭州6-成都7-武汉',
+  `salary_min` mediumint(9) NOT NULL COMMENT '最低工资',
+  `salary_max` mediumint(9) NOT NULL COMMENT '最高工资',
+  `company_name` varchar(100) NOT NULL COMMENT '公司名称',
+  `job_nature` varchar(50) NOT NULL COMMENT '职位描述',
+  `education` tinyint(1) NOT NULL DEFAULT '0' COMMENT '所需学历要求1-高中 2-中专 3-大专 4-大专以上 5-本科 6-硕士 7-博士 8-学历不限',
+  `finance_stage` tinyint(1) NOT NULL DEFAULT '0' COMMENT '融资阶段1初创型(不需要融资) 2初创型(未融资) 3初创型(天使轮) 4成长型(A轮) 5成长型(B轮) 6成熟型(C轮) 7d轮 8成熟型(D轮及以上) 9成熟型(不需要融资) 10成长型(不需要融资) 11上市公司',
+  `company_size` tinyint(1) NOT NULL DEFAULT '0' COMMENT '公司规模1-少于15人 2-15-50人 3-50-150人 4-150-500人 5-500-2000人 6-2000人以上 7-2000以上',
+  `createTime` datetime NOT NULL COMMENT '创建时间'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='清洗后的job数据';
