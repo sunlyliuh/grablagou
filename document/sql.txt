@@ -1,36 +1,33 @@
 CREATE TABLE IF NOT EXISTS `tbl_job` (
-  `id` int(11) NOT NULL,
-  `position_id` int(11) NOT NULL COMMENT 'Ä¿±êid',
-  `job_type` varchar(30) NOT NULL COMMENT 'Ö°Î»ÀàĞÍ',
-  `city` varchar(50) NOT NULL COMMENT 'ËùÔÚ³ÇÊĞ',
-  `salary` varchar(50) NOT NULL COMMENT '¹¤×Ê·¶Î§',
-  `salary_min` mediumint(9) NOT NULL COMMENT '×îµÍ¹¤×Ê',
-  `salary_max` mediumint(9) NOT NULL COMMENT '×î¸ß¹¤×Ê',
-  `company_name` varchar(100) NOT NULL COMMENT '¹«Ë¾Ãû³Æ',
-  `job_nature` varchar(50) NOT NULL COMMENT 'Ö°Î»ÃèÊö',
-  `education` varchar(100) NOT NULL COMMENT 'ËùĞèÑ§Ï°ÒªÇó',
-  `finance_stage` varchar(100) NOT NULL COMMENT 'ÈÚ×Ê½×¶Î',
-  `company_size` varchar(100) NOT NULL COMMENT '¹«Ë¾¹æÄ£',
-  `createTime` datetime NOT NULL COMMENT '´´½¨Ê±¼ä',
-  `position_name` varchar(100) NOT NULL COMMENT 'Ö°Î»Ãû³Æ'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Ö°Î»ĞÅÏ¢±í';
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `position_id` int(11) NOT NULL COMMENT 'ç›®æ ‡id',
+  `job_type` varchar(30) NOT NULL COMMENT 'èŒä½ç±»å‹',
+  `city` varchar(50) NOT NULL COMMENT 'æ‰€åœ¨åŸå¸‚',
+  `salary` varchar(50) NOT NULL COMMENT 'å·¥èµ„èŒƒå›´',
+  `salary_min` mediumint(9) NOT NULL COMMENT 'æœ€ä½å·¥èµ„',
+  `salary_max` mediumint(9) NOT NULL COMMENT 'æœ€é«˜å·¥èµ„',
+  `company_name` varchar(100) NOT NULL COMMENT 'å…¬å¸åç§°',
+  `job_nature` varchar(50) NOT NULL COMMENT 'èŒä½æè¿°',
+  `education` varchar(100) NOT NULL COMMENT 'æ‰€éœ€å­¦ä¹ è¦æ±‚',
+  `finance_stage` varchar(100) NOT NULL COMMENT 'èèµ„é˜¶æ®µ',
+  `company_size` varchar(100) NOT NULL COMMENT 'å…¬å¸è§„æ¨¡',
+  `createTime` datetime NOT NULL COMMENT 'åˆ›å»ºæ—¶é—´',
+  `position_name` varchar(100) NOT NULL COMMENT 'èŒä½åç§°',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='èŒä½ä¿¡æ¯è¡¨' AUTO_INCREMENT=1 ;
 
-
---
--- ±íµÄ½á¹¹ `tbl_clean_job`
---
 
 CREATE TABLE IF NOT EXISTS `tbl_clean_job` (
   `id` int(11) NOT NULL,
-  `position_id` int(11) NOT NULL COMMENT 'Ä¿±êid',
-  `job_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'Ö°Î»ÀàĞÍ:1-php2-java3-c4-c++5-android6-ios',
-  `city` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'ËùÔÚ³ÇÊĞ1-±±¾©2-ÉÏº£3-¹ãÖİ4-ÉîÛÚ5-º¼Öİ6-³É¶¼7-Îäºº',
-  `salary_min` mediumint(9) NOT NULL COMMENT '×îµÍ¹¤×Ê',
-  `salary_max` mediumint(9) NOT NULL COMMENT '×î¸ß¹¤×Ê',
-  `company_name` varchar(100) NOT NULL COMMENT '¹«Ë¾Ãû³Æ',
-  `job_nature` varchar(50) NOT NULL COMMENT 'Ö°Î»ÃèÊö',
-  `education` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'ËùĞèÑ§ÀúÒªÇó1-¸ßÖĞ 2-ÖĞ×¨ 3-´ó×¨ 4-´ó×¨ÒÔÉÏ 5-±¾¿Æ 6-Ë¶Ê¿ 7-²©Ê¿ 8-Ñ§Àú²»ÏŞ',
-  `finance_stage` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'ÈÚ×Ê½×¶Î1³õ´´ĞÍ(²»ĞèÒªÈÚ×Ê) 2³õ´´ĞÍ(Î´ÈÚ×Ê) 3³õ´´ĞÍ(ÌìÊ¹ÂÖ) 4³É³¤ĞÍ(AÂÖ) 5³É³¤ĞÍ(BÂÖ) 6³ÉÊìĞÍ(CÂÖ) 7dÂÖ 8³ÉÊìĞÍ(DÂÖ¼°ÒÔÉÏ) 9³ÉÊìĞÍ(²»ĞèÒªÈÚ×Ê) 10³É³¤ĞÍ(²»ĞèÒªÈÚ×Ê) 11ÉÏÊĞ¹«Ë¾',
-  `company_size` tinyint(1) NOT NULL DEFAULT '0' COMMENT '¹«Ë¾¹æÄ£1-ÉÙÓÚ15ÈË 2-15-50ÈË 3-50-150ÈË 4-150-500ÈË 5-500-2000ÈË 6-2000ÈËÒÔÉÏ 7-2000ÒÔÉÏ',
-  `createTime` datetime NOT NULL COMMENT '´´½¨Ê±¼ä'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='ÇåÏ´ºóµÄjobÊı¾İ';
+  `position_id` int(11) NOT NULL COMMENT 'ç›®æ ‡id',
+  `job_type` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'èŒä½ç±»å‹:1-php2-java3-c4-c++5-android6-ios',
+  `city` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'æ‰€åœ¨åŸå¸‚1-åŒ—äº¬2-ä¸Šæµ·3-å¹¿å·4-æ·±åœ³5-æ­å·6-æˆéƒ½7-æ­¦æ±‰',
+  `salary_min` mediumint(9) NOT NULL COMMENT 'æœ€ä½å·¥èµ„',
+  `salary_max` mediumint(9) NOT NULL COMMENT 'æœ€é«˜å·¥èµ„',
+  `company_name` varchar(100) NOT NULL COMMENT 'å…¬å¸åç§°',
+  `job_nature` varchar(50) NOT NULL COMMENT 'èŒä½æè¿°',
+  `education` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'æ‰€éœ€å­¦å†è¦æ±‚1-é«˜ä¸­ 2-ä¸­ä¸“ 3-å¤§ä¸“ 4-å¤§ä¸“ä»¥ä¸Š 5-æœ¬ç§‘ 6-ç¡•å£« 7-åšå£« 8-å­¦å†ä¸é™',
+  `finance_stage` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'èèµ„é˜¶æ®µ1åˆåˆ›å‹(ä¸éœ€è¦èèµ„) 2åˆåˆ›å‹(æœªèèµ„) 3åˆåˆ›å‹(å¤©ä½¿è½®) 4æˆé•¿å‹(Aè½®) 5æˆé•¿å‹(Bè½®) 6æˆç†Ÿå‹(Cè½®) 7dè½® 8æˆç†Ÿå‹(Dè½®åŠä»¥ä¸Š) 9æˆç†Ÿå‹(ä¸éœ€è¦èèµ„) 10æˆé•¿å‹(ä¸éœ€è¦èèµ„) 11ä¸Šå¸‚å…¬å¸',
+  `company_size` tinyint(1) NOT NULL DEFAULT '0' COMMENT 'å…¬å¸è§„æ¨¡1-å°‘äº15äºº 2-15-50äºº 3-50-150äºº 4-150-500äºº 5-500-2000äºº 6-2000äººä»¥ä¸Š 7-2000ä»¥ä¸Š',
+  `createTime` datetime NOT NULL COMMENT 'åˆ›å»ºæ—¶é—´'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='æ¸…æ´—åçš„jobæ•°æ®';
