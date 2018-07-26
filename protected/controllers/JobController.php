@@ -153,12 +153,12 @@ class JobController extends Controller
     public function actionGrab()
     {
         $jobmodel = new Job;
-        $jobType = 'C++';
+        $jobType = 'C';
         $city    = '北京';
         for($page=1; $page<=10000;$page++){
         $res = $jobmodel->getJob($city, $jobType, $page=1);print_r($res);exit;
         if($res){
-            $jobArr = json_decode($res,true);
+            $jobArr = json_decode($res,true);print_r($jobArr);exit;
             if($jobArr['success'] == 1){
                 $pageCount = $jobArr['content']['totalPageCount'];
                 if($page >= $pageCount){
@@ -251,7 +251,7 @@ class JobController extends Controller
     public function actionCitysalary()
     {
         $city = $_GET['city'];
-        $totalsql = "SELECT avg(salary_min) as avg_salary FROM `tbl_clean_job` where city='{$city}' GROUP BY job_type ORDER BY `job_type` asc";    
+        $totalsql = "SELECT avg(salary_max) as avg_salary FROM `tbl_clean_job` where city='{$city}' GROUP BY job_type ORDER BY `job_type` asc";    
         $jobTotal = Yii::app()->db->createCommand($totalsql)->queryAll();
         $jobTypeTotal = array();
         foreach($jobTotal as $val){
